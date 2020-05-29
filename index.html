@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login Page</title>
+
+    <!-- Embedded stylesheet -->
+    <style>
+/* general style rules */
+body {
+    font-family: sans-serif;
+    font-size: 16 px;
+    padding: 0;
+    margin: auto 0;
+    background-color:  green;
+    color: black;
+}
+main {
+    padding-top: 15%;
+}
+/* form styling */
+.login-form{
+    background: #ffffff;
+    border: none;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 2%;
+}
+.login-form .form-control{
+    border-radius:0.15rem; 
+    background: #f3f3f3;
+    border: none;
+}
+.login-form form{
+    padding: 10% 8%;
+}
+/* button styling */
+.btn-green {
+    text-align: center;
+    width: 93%;
+    margin: 3%;
+    background: green;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/* create account option styling */
+p {
+    color: #f3f3f3;
+    padding: 3%;
+    text-align: center;
+    color: #aaa5a5;
+}
+span {
+    color: green;
+    font-weight: 500;
+    font-size: 14px;
+}    
+    </style>
+</head>
+
+<body>
+    <header></header>
+    
+    <div class="container">
+        <main>
+            <!-- login form -->
+            <div class="login-form">
+                <form action="">
+               <!-- username input  -->
+                <div class="form-group col-md-12 col-sm-12 col-xs-12">  
+                    <input type="username" class="form-control" id="form-username" aria-describedby="username" placeholder="username" name="username" required>
+                </div>
+
+                <!-- password input -->
+                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                    <input type="password" class="form-control" id="form-password" aria-describedby="password" placeholder="password" name="password" required>
+                </div>
+
+                <!-- login button -->
+                <button type="submit" value="login" id="loginBtn" class="btn btn-green login">login</button>
+
+                <!-- create account option -->
+                <p>Not registered? <span>Create an Account.</span></p>
+            </form>
+            </div>
+        </main>
+    </div>
+    <footer></footer>
+
+</body>
+</html> 
